@@ -106,5 +106,5 @@ If you have your (standard or custom) FITS key and corresponding EXIFtool tag th
 
 All header keywords are copied as is to corresponding tag, except GPS coordinates. To keep view as we see it on the sky, the coordinates are shifted as follows:
 $$
-longitude = longitude - 180
+longitude = longitude - 360
 $$

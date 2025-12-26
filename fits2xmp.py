@@ -15,6 +15,7 @@ TODO
     !!! If set -FITcol or -XMPcol in commandpromt, make sure that another is set automatically as well
     !!! Make Class ?
     !!! debug mode ?
+    !!! add test files
     
 """
 #### imports 
