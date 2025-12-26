@@ -45,7 +45,7 @@ unzip fits2exif-main.zip
 ```
 or clone the repository
 ```
-git clone git.XYZ
+git clone https://github.com/ms33sm/fits2exif.git
 ```
 Go to newly created folder (unzip-ed or clone-ed)
 ```
