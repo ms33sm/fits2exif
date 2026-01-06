@@ -16,6 +16,7 @@ TODO
     !!! Make Class ?
     !!! debug mode ?
     !!! add test files
+    !!! make something similar also for XISF files ????
     
 """
 #### imports 
@@ -421,6 +422,7 @@ def stretch(data, stretch_function="ManualInterval", sigma=[1,2]):
             return stretch(data)
         
 def list_files(root_folder, find_file_pattern, find_files_recursively):
+    print(root_folder)
     if (force_folder_pattern == ''):
         if root_folder == '':
             root_folder = "."
@@ -535,8 +537,8 @@ for fit_file in files:
 
                 if mirror_image_v:
                     im = ImageOps.mirror(im)
-                    
-                print(f'Saving file {thumbnail_name}')
+                only_file_name = os.path.basename(thumbnail_name)
+                print(f'Saving file {only_file_name}')
                 im.save(thumbnail_name)
         except:
             pass
@@ -597,5 +599,5 @@ for fit_file in files:
                 except:
                     pass
 
-if pyexiftool_present:
-    et.stop()
+# if pyexiftool_present:
+#     et.stop()
